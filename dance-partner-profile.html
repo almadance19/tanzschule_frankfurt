@@ -10,6 +10,7 @@
   <meta property="og:url" content="https://alma-dance-frankfurt.de/" />
   <meta property="og:image" content="images/logo.webp" />
   <title>Alma Dance Scheduler</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- icofont-css-link -->
   <!--  <link rel="stylesheet" href="css/icofont.min.css"> -->
@@ -200,10 +201,6 @@
       <div id="dance-partner-container" class="container" style="width: 100%;" >
         <div class="row">
           <div class="col">
-          <input style="width: 70%;" type="email" name="email-class" class="form-control" placeholder="Enter your email">
-          <div class="output" ></div>
-          <a id="loginbutton" class="btn btn-info" style="margin-top: 10px;margin-bottom: 10px;text-align: center;background-color: rgb(141, 5, 125);" role="button">Edit Profile</a>
-          <input type="hidden" id="saveid" value="">
           <input type="hidden" id="User_id" value="">
           <input type="hidden" id="User_email" value="">
           <label style="padding: 0px;" for="html"><strong>Name:</strong></label>
@@ -220,11 +217,14 @@
           <input type="text" id="User_anmerkungen" class="form-control" placeholder="Enter your email" disabled>
           <label style="padding: 0px;" for="html"><strong>About me:</strong></label>
           <input type="text" id="User_nextpayment" class="form-control" placeholder="Enter your email" disabled>
+          <label style="padding: 0px;" for="html"><strong>Email:</strong></label>
+          <input style="width: 70%;" type="email" name="email-class" class="form-control" placeholder="Enter your email" disabled>
+          <div class="output" ></div>
+          <a id="loginbutton" class="btn btn-info" style="margin-top: 10px;margin-bottom: 10px;text-align: center;background-color: rgb(141, 5, 125);" role="button">Edit Profile</a>
+          <a id="deletebutton" class="btn btn-info" style="margin-top: 10px;margin-bottom: 10px;text-align: center;background-color: rgb(141, 5, 125);" role="button">Delete Profile</a>
+
         </div>
         </div>
-        <br class="">
-      <p class="">Not Registered yet?</p>
-      <a id="register" href="dance-partner-registration.html" class="btn btn-info" style="margin-top: 10px;margin-bottom: 10px;text-align: center;background-color: rgb(141, 5, 125);" role="button">Register</a>
 
     </section>
 
@@ -397,7 +397,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </script>
       <link rel="stylesheet" href="css/icofont.min.css">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+
 
 </body>
 

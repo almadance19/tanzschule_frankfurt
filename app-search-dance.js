@@ -4,8 +4,20 @@ const postTemplate = document.getElementById('single-post');
 const url = 'https://script.google.com/macros/s/AKfycbxFy18JvPmQixnw7enJSFQYe4tVC9newrU9MngM0l9I2lEgiY1LLJOoLCptTQlWmsA/exec';
 const users= [];
 
+//get user fields
+const emailinput = document.getElementById("User_email");
+const nameinput = document.getElementById("User_name");  
+const coursesinput = document.getElementById("User_courses");  
+const idinput = document.getElementById("User_id");  
+const activeinput = document.getElementById("User_active"); 
+const lastpaymentinput = document.getElementById("User_lastpayment");  
+const saldoinput = document.getElementById("User_saldo");  
+const anmerkungeninput = document.getElementById("User_anmerkungen");  
+const nextpaymentinput = document.getElementById("User_nextpayment");
+
 ///DEFINE BUTTON FILTERS AND EVENT LISTENERS
 const btn_female =  document.getElementById('followers');
+
 btn_female.addEventListener("click", function(){
     filterUsers("Female/Follower");
 }, false);
@@ -70,7 +82,6 @@ xhr.onload = function() {
             postEl.querySelector(".customer-container").setAttribute('value',post[0]);
             postEl.querySelector("a").setAttribute("onclick","contactPartner('"+post[0]+"');");
 
-
             if (post[9]=="Registration saved without a photo / Registrierung ohne Foto gespeichert") {
                 postEl.querySelector('img').src = "images/review1.png";
             }   else {
@@ -81,8 +92,33 @@ xhr.onload = function() {
     users.push(post);
   }
   console.log(users)
+
+      // Get User Data from Local Storage
+      const extractedUser = JSON.parse(localStorage.getItem('user'));
+      console.log(extractedUser);
+      if (extractedUser) {
+        console.log('Got the id - ' + extractedUser.id);
+        document.getElementById("name_display").style.display="block";
+        document.getElementById("name_display").innerHTML = extractedUser.name;
+        document.getElementById("email_display").innerHTML = extractedUser.email;
+        document.getElementById("user_message").innerHTML = "You can contact a user now.";
+        document.getElementById("user_message2").innerHTML = "";
+        coursesinput.value=extractedUser.name;
+        emailinput.value=extractedUser.email;
+        btn_edit_profile.style.display="block";
+
+      } else {
+        console.log('Could not find id.');
+      }
 };
 xhr.send();
+
+
+
+
+
+
+
 
 //GENERAL FIELDS
 
@@ -90,6 +126,7 @@ urluser='https://script.google.com/macros/s/AKfycbwSTDQj8m9dHS0iTVyr3QDViZ8ItpT6
 const output = document.querySelector('.output');
 const btn_login = document.getElementById('loginbutton');
 btn_login.addEventListener('click',getLogin);
+const btn_edit_profile = document.getElementById('edit_profile');
 
 
 function getLogin() { 
@@ -138,6 +175,7 @@ function getUser(email_value) {
           } 
           else {
           document.getElementById("name_display").style.display="block";
+          btn_edit_profile.style.display="block";
           document.getElementById("name_display").innerHTML = val.posts[0][1];
           document.getElementById("email_display").innerHTML = email_value;
           document.getElementById("user_message").innerHTML = "You can contact a user now."
@@ -153,24 +191,27 @@ function getUser(email_value) {
           anmerkungeninput.value = val.posts[0][6];
           nextpaymentinput.value = val.posts[0][4];
 
+          const user = {
+            id: val.posts[0][0],
+            name: val.posts[0][1],
+            email:email_value,
+            gender: val.posts[0][2],
+            level: val.posts[0][3],
+            description: val.posts[0][4],
+            ideal_partner: val.posts[0][5],
+            goals: val.posts[0][6],
+            styles: val.posts[0][7],
+          };
+
+            localStorage.setItem('user', JSON.stringify(user));
+
         }
         });
-
       } else {
         output.innerHTML = "Enter a valid email";
       }
 }
 
-//get user fields
-const emailinput = document.getElementById("User_email");
-const nameinput = document.getElementById("User_name");  
-const coursesinput = document.getElementById("User_courses");  
-const idinput = document.getElementById("User_id");  
-const activeinput = document.getElementById("User_active"); 
-const lastpaymentinput = document.getElementById("User_lastpayment");  
-const saldoinput = document.getElementById("User_saldo");  
-const anmerkungeninput = document.getElementById("User_anmerkungen");  
-const nextpaymentinput = document.getElementById("User_nextpayment");
 
 ///CONTACT PARTNER FUNCTION 
 

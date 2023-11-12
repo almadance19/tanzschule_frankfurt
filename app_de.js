@@ -1,4 +1,6 @@
 //GIT GUIDE
+// git init
+//git remote add origin "https://github.com/almadance19/tanzschule_frankfurt.git"
 //git add --all
 //git commit -m "commit message"
 //git commit -m "commit message"git push --force origin
@@ -21,6 +23,7 @@ function getInit() {
   //initPayPalButton();
   getData();
   getPrices();
+  getUserLocalData();
 };
 
 // call API COURSES
@@ -122,7 +125,29 @@ function getData() {
 
 };
 
+function getUserLocalData() { 
 
+
+  const extractedUser = JSON.parse(localStorage.getItem('profile_local'));
+  console.log(extractedUser);
+
+  if (extractedUser) {
+
+    emailinput.value = extractedUser.email;
+    nameinput.value = extractedUser.name;
+    idinput.value = extractedUser.id;
+
+
+    document.querySelector('input[name=email-class]').value = extractedUser.email;
+    document.querySelector('input[name=email-membership]').value = extractedUser.email;
+    document.querySelector('input[name=email-member]').value = extractedUser.email;
+    
+  } else {
+    console.log('Could not find id.');
+  }
+
+
+}
 
 function getPrices() { 
 
@@ -215,7 +240,11 @@ function bookClasses() {
     bank.innerHTML = '';
     document.getElementById("price_shield").style.display = "none";
     document.querySelector(".section-2").scrollIntoView();
-    getUser(email_value);
+
+      if (idinput.value=="Not Registered yet") {
+        getUser(email_value);
+      } 
+  
     } else {
       output.innerHTML = "Enter a valid email";
     }
@@ -233,7 +262,9 @@ function showMemberships() {
     document.getElementById("payment-block").style.display = 'none';
     btnBookaclass.style.display = "block";
     document.querySelector(".section-1").scrollIntoView();
-    getUser(email_value);
+      if (idinput.value=="Not Registered yet") {
+        getUser(email_value);
+      } 
     } else {
       outputMembership.innerHTML = "Enter a valid email";
     }
@@ -243,7 +274,7 @@ function showMemberships() {
 function getPayments() { 
   var email_value = document.querySelector('input[name=email-member]').value;
   if (email_value != '') { 
-      //outputMember.innerHTML = "..loading";
+      outputMember.innerHTML = "..loading";
       getUser(email_value);
       
     } else {
@@ -263,6 +294,11 @@ function showStates(id,name,genre,lebel,adress,dia,day_nr,hora,fecha,details)
     var active = document.getElementById("User_active").value;
     var user_email = document.getElementById("User_email").value;
 
+    let name_user2; 
+
+    if (name_user=="No Active User") {
+      name_user2=""
+    } else {name_user2=name_user}
 
 
     var displayTable = "<div class=\"modal\" tabindex=\"-1\" role=\"dialog\" id=\"myModal\">";
@@ -297,7 +333,7 @@ function showStates(id,name,genre,lebel,adress,dia,day_nr,hora,fecha,details)
     displayTable += '</div>';
     displayTable += '<div class="form-row">';
     displayTable += '<label for="firstname" style="font-weight: bold">Name</label>';
-    displayTable += "<input type=\"text\" id=\"firstname\" class=\"form-control\" Value=\""+"\" >";
+    displayTable += "<input type=\"text\" id=\"firstname\" class=\"form-control\" Value=\""+name_user2+"\" >";
     displayTable += '<small id="nameHelp" class="form-text text-muted" style="color:yellow" >** Check your name is correct.</small>';
     displayTable += '</div>';
     displayTable += '<div class="form-row">';
@@ -374,7 +410,7 @@ function getUser(email_value) {
           saldoinput.value = val[5];
           anmerkungeninput.value = val[6];
           nextpaymentinput.value = val[4];
-
+          outputMember.innerHTML = "";
 
           } 
           else {
@@ -392,6 +428,29 @@ function getUser(email_value) {
           anmerkungeninput.value = val[6];
           nextpaymentinput.value = val[4];
           btnPayments.style.display="block";
+
+          outputMember.innerHTML = "";
+
+          const user_profile = {
+            id: val[0],
+            name: val[3],
+            email: email_value,
+            active: val[2],
+            membership: val[1],
+            last_payment: val[7],
+            next_payment: val[4],
+            saldo: val[5],
+            note: val[6]
+         };
+
+         const profile_local = {
+           id: val[0],
+           name: val[3],
+           email: email_value,
+        };
+
+           sessionStorage.setItem('profile', JSON.stringify(user_profile));
+           localStorage.setItem('profile_local', JSON.stringify(profile_local));
           
         }
         });
@@ -631,6 +690,12 @@ function paymentForm(membership, price_total,nr_months,stripe_link,payment_type,
     document.querySelector(".section-2").style.display = 'none';
     btnBookaclass.style.display = 'block';
 
+    let name_user2; 
+
+    if (name_user=="No Active User") {
+      name_user2=""
+    } else {name_user2=name_user}
+
 
 
     var displayTable = ""
@@ -647,7 +712,7 @@ function paymentForm(membership, price_total,nr_months,stripe_link,payment_type,
     displayTable += '</div>';
     displayTable += '<div class="form-row">';
     displayTable += '<label for="firstname" style="font-weight: bold">Name</label>';
-    displayTable += "<input type=\"text\" id=\"firstname_pay\" class=\"form-control\" Value=\""+name_user+"\" >";
+    displayTable += "<input type=\"text\" id=\"firstname_pay\" class=\"form-control\" Value=\""+name_user2+"\" >";
     displayTable += '<small id="nameHelp" class="form-text text-muted" style="color:yellow" >** Check your name is correct.</small>';
     displayTable += '</div>';
     displayTable += '<div class="form-row">';
@@ -726,7 +791,7 @@ function selectMembership() {
   document.getElementById("stripe-container").style.display = "block";
   document.getElementById("payment-block").style.display = "none";
   const bank = document.getElementById('bank-button-container').style.display = 'none';
-  bank = '';
+  bank.innerHTML = '';
   const element = document.getElementById('paypal-button-container');
   element.innerHTML = '';
 }
