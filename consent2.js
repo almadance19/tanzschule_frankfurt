@@ -48,7 +48,7 @@ if (consent == 'true') {
     displayTable += "<h3> "+ "Wir verwenden Cookies auf unserer Website" + "</h3>";
     //displayTable += "<p> "+ "We use cookies to provide and secure our websites, as well as to analyze the usage of our websites, in order to offer you a great user experience. To learn more about our use of cookies see our Privacy Policy." + "</p>";
     displayTable += "<p> "+ "Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. Für mehr Infos " ;
-    displayTable += "<Strong><a href=\"https://alma-dance.de/privacy-policy\">unsere Datenschutzerklärung</a></Strong>"+ "prüfen. </p>";
+    displayTable += "<Strong><a href=\"https://alma-dance.de/privacy-policy\">unsere Datenschutzerklärung</a></Strong>"+ " prüfen. </p>";
     displayTable += "</div>";
 
     displayTable += '<form style="background-color:white;color:black">';
