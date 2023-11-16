@@ -15,6 +15,7 @@
 
   <title>Alma Dance Tanzschule in Frankfurt: Bachata, Salsa, Zouk & mehr Tanzkurse</title>
 
+  <link rel="stylesheet" href="css/consent.css">
   <!-- Bootstrap-Style-link -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Owl-Carosal-Style-link -->
@@ -84,42 +85,8 @@
       }
       </script>
 
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '329457332873799');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=329457332873799&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-    
-  
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WLJVWFTJ');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6VE16LTC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-DX6VE16LTC');
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 
 </head>
 
@@ -441,7 +408,10 @@
       </div>
       <div class="map_block row_am" data-aos="fade-in" data-aos-duration="1500">
         <div class="container">
-          <iframe title="Location Alma Dance" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.996994696205!2d8.685250562540753!3d50.105063221409466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0f71905f8aff%3A0xc9a56681f6e2a1c0!2sAlma%20Dance%20Frankfurt!5e0!3m2!1sen!2sde!4v1699112897133!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div id="map">
+            <button id="load">Click me to load js</button>
+          </div>
+          <script id="my_scriptjs"></script>
         </div>
       </div>
       <h4>Anfahrt</h4>
@@ -450,6 +420,7 @@
     </div>
   </div>
 </section>
+<div id="statesModal"></div>
     <!--Experts Team Section End  -->
 
     <!-- Footer-Section start -->
@@ -550,7 +521,7 @@
   <!-- Page-wrapper-End -->
 
   <!-- Jquery-js-Link -->
-  <script src="js/jquery.js"></script>
+
   <!-- owl-js-Link -->
   <script src="js/owl.carousel.min.js"></script>
   <!-- bootstrap-js-Link -->
@@ -564,20 +535,15 @@
   <!--SKRIPT ZONE  -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/main.js"></script>
+ 
 
   <!-- PROD PAYPAL <script src="https://www.paypal.com/sdk/js?client-id=Ad_vdC1plSPko5d9oY4CJeobC3WYQqtoyOthXJ0IcKfo38y-Ya9wcgRTglhuWrNSRyub31mxXLhUuAFM&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script> -->
   <!-- TEST PAYPAL <script src="https://www.paypal.com/sdk/js?client-id=AclB-BsMF4ANpqyctt2euY8KJeBkjLLKZblEKOinRpLMY4ku2ecNq45KvJ7CdMKMg-z3BJQKndjc0553&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>  -->
 
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLJVWFTJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-  <script>
+  <script type="text/javascript">
     $("#typed").typed({
       strings: ["Type Writing Text", "Auto Type Text", "Add any text you like here."],
       typeSpeed: 100,
@@ -607,11 +573,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       // Attach a click event handler to the button
       $('#scrollButton').click(function () {
         // Scroll down smoothly 200 pixels from the current position
-        $('html, body').animate({ scrollTop: $(window).scrollTop() + 600 }, 800); // Adjust the speed (800ms) as needed
+$('html, body').animate({ scrollTop: $(window).scrollTop() + 600 }, 800); // Adjust the speed (800ms) as needed
       });
     });
 
   </script>
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- <script src="consent.js"></script> -->
+   <script src="consent2.js"></script>
+
 <link rel="stylesheet" href="css/icofont.min.css">
 
 </body>

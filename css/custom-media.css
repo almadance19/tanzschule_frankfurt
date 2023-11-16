@@ -26,6 +26,23 @@
 
 } */
 
+.modal-dialog {
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 50%;
+ }  
+
+
+.modal-cookies {
+    max-width: 100%;
+    max-height: 80%;
+    cursor: pointer;
+    transition: .4s all;
+  }
 
 @media screen and (max-width:935px) {
    
