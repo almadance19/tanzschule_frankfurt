@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Alma Dance" />
+  <meta property="og:url" content="https://alma-dance-frankfurt.de/" />
+  <meta property="og:image" content="images/logo.png" />
+  <title>Alma Dance Scheduler</title>
+
+  <!-- icofont-css-link -->
+  <link rel="stylesheet" href="css/icofont.min.css">
+  <!-- Owl-Carosal-Style-link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap-Style-link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Aos-Style-link -->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Coustome-Style-link -->
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Coustome-Style-link 2 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom-media.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '329457332873799');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=329457332873799&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WLJVWFTJ');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6VE16LTC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-DX6VE16LTC');
+    </script>
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <!-- Header Start -->
+  <header>
+    <!-- container start -->
+    <div class="container">
+      <!-- navigation bar -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <!-- <i class="icofont-navigation-menu ico_menu"></i> -->
+            <span class="toggle-wrap">
+              <span class="toggle-bar"></span>
+            </span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://alma-dance.de/">Home</a>
+            </li>
+            <!-- secondery menu start -->
+            <!-- <li class="nav-item has_dropdown">
+              <a class="nav-link" href="#">Pages</a>
+              <span class="drp_btn"><i class="icofont-rounded-down"></i></span>
+              <div class="sub_menu">
+                <ul>
+                  <li><a href="blog-list.html">Blog List</a></li>
+                  <li><a href="blog-detail.html">Single Blog</a></li>
+                  <li><a href="sign-in.html">Sign In</a></li>
+                  <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+              </div>
+            </li> -->
+            <!-- secondery menu end -->
+            <li class="nav-item">
+              <a class="nav-link" href="https://alma-dance.de/pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://alma-dance.de/schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://alma-dance.de/contact">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review_section">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://alma-dance.de/dance-partner">Dance Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://alma-dance.de/contact-us">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="btn_block">
+                <a class="nav-link dark_btn" href="booking_de.html">Deutsch</a>
+                <div class="btn_bottom"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navigation end -->
+    </div>
+    <!-- container end -->
+  </header>
+<!-- Start Of Hero Section -->
+<section>
+  <div class="hero-box">
+      <div class="hero-video-box">
+          <div class="hero-video d-none d-md-block">
+              <video height="270" width="480" autoplay="" muted="" disablepictureinpicture="" disableremoteplayback="" loop="" playsinline="">&gt;
+                  <source src="images/Frankfurt Bachata Festival - Bachata Festival in Germany.mp4">
+                  <source src="images/Frankfurt Bachata Festival - Bachata Festival in Germany.mp4">
+                  <p class="warning">Your browser does not support HTML5 video.</p>
+              </video>
+          </div>
+          <div class="hero-video d-md-none">
+              <video height="270" width="480"  autoplay="" muted="" disablepictureinpicture="" disableremoteplayback="" loop="" playsinline="">&gt;
+                <source src="images/Frankfurt Bachata Festival - Bachata Festival in Germany.mp4">
+                <source src="images/Frankfurt Bachata Festival - Bachata Festival in Germany.mp4">
+                  <p class="warning">Your browser does not support HTML5 video.</p>
+              </video>
+          </div>
+          <!-- <div class="hero-video-info">
+              <h2>YOU CANNOT MISS THIS EXPERIENCE</h2>
+          </div> -->
+      </div>
+      <div class="hero-info">
+          <div class="hero-list">
+              <ul>
+                  <li><strong>Classes in Frankfurt City</strong></li>
+                  <li><strong>Express & connect with other dancers</strong></li>
+              </ul>
+          </div>
+          <div class="hero-button">
+              <a href="#agenda-container" class="button button-radius button-border button-gradient-bg">BOOK FREE TRIAL CLASS</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- End Of Hero Section -->
+
+  <!-- Page Wraper -->
+  <div class="page_wrapper">
+
+    <br>
+    <br>
+    <br>
+    <section class="our_value_section row_am" style="text-align: center">
+      <iframe width="700px" height="400px" src="//www.youtube.com/watch?v=k80xqw1tSbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      <div class="sqs-html-content">
+        <br>
+        <iframe width="560" height="315" src="//www.youtube.com/watch?v=k80xqw1tSbc"  frameborder="0" allowfullscreen></iframe>
+        <p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.213559s;" class="sqsrte-large preFade fadeIn">Bachata is a dance originally from the Dominican Republic and one of the most popular dances from Latin America. </p><p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.223729s;" class="sqsrte-large preFade fadeIn">The dance was influenced by merengue and salsa and has been on rise since the late 2000s, when bachata sensual was created and quickly took place alongside bachata urbana and bachata dominicana. Bachata sensual evolved under the initiative of Korke &amp; Judith from Spain and led to a huge increase in the popularity of bachata.  The dance has become more lyrical and modern, also with the rise of remixes and more popular bachata songs by artists such as Romeo Santos, Aventura, Prince Royce, Dani J and others. </p><p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.233898s;" class="sqsrte-large preFade fadeIn">The characteristics of bachata sensual are body waves, body isolations, involvement of arm styling and many soft movements that use the principle of a very fine leading &amp; following. </p>
+      </div>
+      </section>
+      <!-- Our Value Section Start -->
+      <section class="our_value_section row_am">
+        <br>
+        <br>        
+          <div class="container">
+            <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+              <span class="title_badge">Why Bachata?</span>
+              <h2>Benefits of dancing Bachata</h2>
+            </div>
+            <!-- Value Slider Start -->
+            <div class="value_slider" data-aos="fade-in" data-aos-duration="1500">
+              <div class="owl-carousel owl-theme" id="value_slider">
+                <div class="item">
+                  <div class="value_block">
+                    <div class="icon">
+                      <img src="images/ourvalue_1.png" alt="image">
+                    </div>
+                    <div class="text">
+                      <h3>Joy and happiness</h3>
+                      <p>Dancing improves self confidence and stimulates the release of important chemicals, like dopamine, oxytocin and endorphin. Bachata dancing has been found to be a very good anti-stress therapy. There is nothing better than a nice bachata party on Friday night after a long weekend of work.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="value_block">
+                    <div class="icon">
+                      <img src="images/ourvalue_2.png" alt="image">
+                    </div>
+                    <div class="text">
+                      <h3>Social bonding</h3>
+                      <p>Bachata dancing is a great way to meet lots of fun and interesting people. It brings together people of different nationalities, origins and background. Also here in Frankfurt the bachata community is very strong and there are weekly dance parties as regular meet-ups of friends. Come along, make new friends and enjoy dancing!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="value_block">
+                    <div class="icon">
+                      <img src="images/ourvalue_3.png" alt="image">
+                    </div>
+                    <div class="text">
+                      <h3>Health enhancement</h3>
+                      <p>Bachata is a semi-dynamic dance style. As much as it helps to reduce weight, improves heart and cardiovascular system, it is also a dance that requires body control and use of core and leg muscles, among others, which imrpoves overall flexibility and strength.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="value_block">
+                    <div class="icon">
+                      <img src="images/ourvalue_1.png" alt="image">
+                    </div>
+                    <div class="text">
+                      <h3>Memory improvement</h3>
+                      <p>According to many studies, dancing improves visual perception and spacial memory and helps to prevent diseases such as Dementia and Alzheimer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Value Slider End -->
+          </div>
+  
+        
+      </section>
+      <!-- Our Value Section End -->
+          <!-- About Us Section Start -->
+    <section class="about_us_section">
+      <div class="container">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+          <span class="title_badge">About us</span>
+          <h2>Hi! We are Eduardo and Natalia<br> <span>the founders of Alma Dance</span> </h2>
+          <p>We are an international couple from Mexico and Slovakia living in Frankfurt. As passionate dancers, and after a several years teaching latin dance, we decided to start a project to give latin dance classes and build a strong dance community with an all-rounded dance offering. And so Alma Dance came to life, representing the way we see dance and the place it has in our lives (in Spanish, “alma” means “soul”). As professional dance teachers and performers fluent in different languages, we teach both locally and internationally. </p>
+          <br>
+          <p>Wanna be part of Alma Dance? Join us anytime ;)</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row abt_text" data-aos="fade-up" data-aos-duration="1500">
+          <div class="col-md-5">
+            <h2><span>Our story</span></h2>
+          </div>
+          <div class="col-md-7">
+            <p>Lorem Ipsum is simply dummy.</p>
+            <p>Lorem Ipsum is simply dummy.</p>
+            <p>Lorem Ipsum is simply dummy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about_slider row_am" data-aos="fade-in" data-aos-duration="1500">
+        <div class="owl-carousel owl-theme" id="about_slider">
+          <div class="item">
+            <div class="abt_slides">
+              <img src="images/abtslide_1.png" alt="image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="abt_slides">
+              <img src="images/abtslide_2.png" alt="image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="abt_slides">
+              <img src="images/abtslide_3.png" alt="image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="abt_slides">
+              <img src="images/abtslide_4.png" alt="image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="abt_slides">
+              <img src="images/abtslide_5.png" alt="image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="abt_slides">
+              <img src="images/abtslide_4.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.137143s;" class="preScale scaleIn">WE ARE MORE THAN JUST A DANCE SCHOOL …</h3><p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.142857s;" class="sqsrte-large preFade"><strong>At Alma Dance, we dance to express and connect with ourselves and others. When we dance, we do it from our heart and soul, because only then it becomes more than just a movement. </strong></p><p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.148571s;" class="sqsrte-large preFade"><strong>For us, dance is art.</strong></p><p class="preFade" data-rte-preserve-empty="true" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.2s; transition-delay: 0.154286s;"></p>
+      </div>
+      
+    </section>
+    <!-- About Us Section End -->
+
+
+
+
+    <!-- Footer-Section start -->
+    <footer class="white_text" data-aos="fade-in" data-aos-duration="1500">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="logo_side">
+              <!-- <div class="logo">
+                <a href="#">
+                  <img src="images/ft_logo.png" alt="Logo">
+                </a>
+              </div> -->
+              <div class="news_letter">
+                <h3>Subscribe newsletter</h3>
+                <p>Be the first to recieve all latest post in your inbox</p>
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn"><i class="icofont-paper-plane"></i></button>
+                  </div>
+                  <p class="note">By clicking send link you agree to receive news and promotions from us.</p>
+                </form>
+              </div>
+              <ul class="contact_info">
+                <li><a href="mailto:">info@alma-dance.de</a></li>
+                <li><a href="https://wa.me/message/AQECYWAZB43BJ1">+49 1639641730</a></li>
+              </ul>
+              <ul class="social_media">
+                <li><a href="https://www.facebook.com/AlmaDanceFrankfurt"><i class="icofont-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/eduardo_natalia_almadance/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@almadancebachatasalsa9317"><i class="icofont-youtube"></i></a></li>
+                <li><a href="https://wa.me/message/AQECYWAZB43BJ1"><i class="icofont-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="download_side">
+              <h3>The Dance Experience</h3>
+              <ul class="app_btn">
+                <!-- <li>
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="ft_inner">
+            <div class="copy_text">
+              <p>©Alma Dance Frankfurt by Eduardo Millan</p>
+            </div>
+            <ul class="links">
+              <li><a href="https://alma-dance.de/">Home</a></li>
+              <li><a href="https://alma-dance.de/instructors">About us</a></li>
+              <li><a href="https://alma-dance.de/pricing">Prices</a></li>
+              <li><a href="https://alma-dance.de/contact-us">Contact us</a></li>
+            </ul>
+            <div class="design_by">
+              <!-- <p>Crafted by <a href="https://alma-dance.de" target="blank">Eduardo Millan</a></p> -->
+              <p><a href="https://alma-dance.de/privacy-policy" target="blank">Privacy Policy</a></p>
+              <p><a href="https://alma-dance.de/impressum" target="blank">Impressum</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer-Section end -->
+
+    <!-- go top button -->
+    <div class="go_top" id="Gotop">
+      <span><i class="icofont-arrow-up"></i></span>
+    </div>
+
+    <!-- Video Model Start -->
+    <div class="modal fade youtube-video" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button id="close-video" type="button" class="button btn btn-default text-right" data-dismiss="modal">
+            <i class="icofont-close-line-circled"></i>
+          </button>
+          <div class="modal-body">
+            <div id="video-container" class="video-container">
+              <iframe id="youtubevideo" width="640" height="360" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video Model End -->
+  </div>
+  <!-- Page-wrapper-End -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Jquery-js-Link -->
+  <script src="js/jquery.js"></script>
+  <!-- owl-js-Link -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- bootstrap-js-Link -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- aos-js-Link -->
+  <script src="js/aos.js"></script>
+  <!-- Typed Js Cdn -->
+  <script src='js/typed.min.js'></script>
+  <!-- main-js-Link -->
+  <script src="js/main.js"></script>
+
+  <!--SKRIPT ZONE  -->
+  <script src="app.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- PROD PAYPAL <script src="https://www.paypal.com/sdk/js?client-id=Ad_vdC1plSPko5d9oY4CJeobC3WYQqtoyOthXJ0IcKfo38y-Ya9wcgRTglhuWrNSRyub31mxXLhUuAFM&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script> -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Ad_vdC1plSPko5d9oY4CJeobC3WYQqtoyOthXJ0IcKfo38y-Ya9wcgRTglhuWrNSRyub31mxXLhUuAFM&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <!-- TEST PAYPAL <script src="https://www.paypal.com/sdk/js?client-id=AclB-BsMF4ANpqyctt2euY8KJeBkjLLKZblEKOinRpLMY4ku2ecNq45KvJ7CdMKMg-z3BJQKndjc0553&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>  -->
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLJVWFTJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <script>
+    $("#typed").typed({
+      strings: ["Type Writing Text", "Auto Type Text", "Add any text you like here."],
+      typeSpeed: 100,
+      startDelay: 0,
+      backSpeed: 60,
+      backDelay: 2000,
+      loop: true,
+      cursorChar: "|",
+      contentType: 'html'
+    });
+
+    // Fixed Discount Dish JS
+    $(document).ready(function () {
+      let cardBlock = document.querySelectorAll('.task_block');
+      let topStyle = 120;
+
+      cardBlock.forEach((card) => {
+        card.style.top = `${topStyle}px`;
+        topStyle += 30;
+      })
+
+    }
+    );
+
+    // Scroll Down Window 
+    $(document).ready(function () {
+      // Attach a click event handler to the button
+      $('#scrollButton').click(function () {
+        // Scroll down smoothly 200 pixels from the current position
+        $('html, body').animate({ scrollTop: $(window).scrollTop() + 600 }, 800); // Adjust the speed (800ms) as needed
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

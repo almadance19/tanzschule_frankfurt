@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Alma Dance Frankfurt" />
+  <meta property="og:url" content="https://alma-dance-frankfurt.de/" />
+  <meta property="og:description" content="Express & Connect" />
+  <meta property="og:image" content="images/logo.webp" />
+  <meta property="og:description" content="Express & Connect. Join our community to learn latin dance, meet new people, express yourself and grow by learning Salsa, Bachata  &amp; More in Frankfurt &amp; Offenbach. Trial Class is Free!!">
+  <meta name="description" content="Join our community to learn latin dance, meet new people, express yourself and grow by learning Salsa, Bachata &amp; More in Frankfurt &amp; Offenbach. Trial Class is Free!!">
+
+  <title>Alma Dance Scheduler</title>
+
+  <!-- icofont-css-link -->
+  <!--  <link rel="stylesheet" href="css/icofont.min.css"> -->
+  <!-- Owl-Carosal-Style-link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap-Style-link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Aos-Style-link -->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Coustome-Style-link -->
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Coustome-Style-link 2 -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom-media.css">
+
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <!-- Markup Schema Data Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        "@id": "SportsActivityLocation",
+        "actionableFeedbackPolicy": "Alma Dance Frankfurt",
+        "additionalType": "https://alma-dance-frankfurt.de/",
+        "alternateName": "Tanzschule Alma Dance",
+        "areaServed": "Frankfurt am Main",
+        "description": "Join our amazing community to learn latin dance in Frankfurt. Meet new people, express yourself and grow by learning Salsa, Bachata & More.",
+      "image": [
+        "https://alma-dance-frankfurt.de/images/logo.webp",
+        "https://example.com/photos/4x3/photo.jpg",
+        "https://example.com/photos/16x9/photo.jpg"
+       ],
+      "name": "Alma Dance Frankfurt",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dreieichstraße 35",
+        "addressLocality": "Frankfurt am Main",
+        "addressRegion": "Hessen",
+        "postalCode": "60594",
+        "addressCountry": "Germany"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Viktoria"
+        }
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.10515822875264,
+        "longitude": 8.692279249077423
+      },
+      "url": "https://alma-dance-frankfurt.de/",
+      "telephone": "+49 1639641730",
+      "email": "info@alma-dance.de"
+    }
+    </script>
+
+<!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '329457332873799');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=329457332873799&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WLJVWFTJ');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6VE16LTC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-DX6VE16LTC');
+    </script>
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <!-- Header Start -->
+  <header>
+    <!-- container start -->
+    <div class="container">
+      <!-- navigation bar -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="home.html">
+          <img src="images/logo.webp" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <!-- <i class="icofont-navigation-menu ico_menu"></i> -->
+            <span class="toggle-wrap">
+              <span class="toggle-bar"></span>
+            </span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <!-- secondery menu start -->
+            <!-- <li class="nav-item has_dropdown">
+              <a class="nav-link" href="#">Pages</a>
+              <span class="drp_btn"><i class="icofont-rounded-down"></i></span>
+              <div class="sub_menu">
+                <ul>
+                  <li><a href="blog-list.html">Blog List</a></li>
+                  <li><a href="blog-detail.html">Single Blog</a></li>
+                  <li><a href="sign-in.html">Sign In</a></li>
+                  <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+              </div>
+            </li> -->
+            <!-- secondery menu end -->
+            <li class="nav-item">
+              <a class="nav-link" href="Pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dance-partner-search.html">Dance Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="btn_block">
+                <a class="nav-link dark_btn" href="booking_de.html">Deutsch</a>
+                <div class="btn_bottom"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navigation end -->
+    </div>
+    <!-- container end -->
+  </header>
+<!-- Start Of Hero Section -->
+<section>
+  <div class="hero-box">
+      <div class="hero-video-box">
+          <div class="hero-video">
+              <video poster="images/hintergrund.webp" height="270" width="480" autoplay="" muted="" disablepictureinpicture="" disableremoteplayback="" loop="" playsinline="">&gt;
+                  <source src="images/Frankfurt Bachata Festival - Bachata Festival in Germany.mp4">
+                  <p class="warning">Your browser does not support HTML5 video.</p>
+              </video>
+          </div>
+          <!-- <div class="hero-video d-md-none"> -->
+             <!-- ZU PFLEGEN FALLS EIN VIDEO FOR MOBILE UND DESKTOP -->
+              <!-- <video poster="images/hintergrund.webp" height="270" width="480"  autoplay="" muted="" disablepictureinpicture="" disableremoteplayback="" loop="" playsinline="">&gt;
+                <source src="images/Frankfurt Bachata Festival - Bachata Festival in Germany.mp4">
+                  <p class="warning">Your browser does not support HTML5 video.</p>
+              </video> -->
+          </div>
+          <!-- <div class="hero-video-info">
+              <h2>YOU CANNOT MISS THIS EXPERIENCE</h2>
+          </div> -->
+      </div>
+      <div class="hero-info">
+          <div class="hero-list">
+              <ul>
+                  <li><i class="icofont-star"></i><strong> Classes in Frankfurt City</strong></li>
+                  <li><i class="icofont-star"></i><strong> Meet & connect in a great community</strong></li>
+                  <li><i class="icofont-star"></i><strong> No dance partner needed</strong></li>
+                </ul>
+          </div>
+          <div class="hero-button">
+              <a href="#agenda-container" class="button button-radius button-border button-gradient-bg">BOOK FREE TRIAL CLASS</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- End Of Hero Section -->
+  <!-- Banner-Section-Start -->
+  <section class="banner_section">
+    <!-- container start -->
+    <div class="container">
+      <!-- row start -->
+      <div class="row">
+
+        <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-duration="1500">
+          <!-- banner image left -->
+          <!-- <div class="hero_imgleft">
+            <img src="images/hero_img1.png" alt="image">
+          </div> -->
+        </div>
+
+        <div class="col-lg-6 col-12 banner_content_colom" data-aos="fade-up" data-aos-duration="1500">
+          <!-- banner text -->
+          <div class="banner_text">
+            <h2> Alma Dance Frankfurt</h2>
+            <!-- h1 -->
+            <!-- <h2>19th - 22th April 2024<br><span>YOU CANNOT MISS THIS EXPERIENCE</span></h2> -->
+            <!-- p -->
+            <p>
+              We are more than just a dance school!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-duration="1500">
+      </div>
+
+
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- container end -->
+  </section>
+  <!-- Banner-Section-end -->
+
+
+
+
+ <!-- AGENDA Section Start -->
+ <section id="agenda-container" class="how_it_section">
+  <div class="how_it_inner" data-aos="fade-in" data-aos-duration="1500">
+    <div class="container">
+      <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+        <!-- <span class="title_badge">Quick & easy</span> -->
+        <h2>Alma Dance Registration</h2>
+        <a id="promotion-button" href="Pricing.html#promotion-section" class="btn btn-info" style="margin-top: 10px;margin-bottom: 10px;padding: 10px;background-color: rgb(238, 15, 52);" role="button"><strong>Promotions</strong></a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="steps_block step_border" data-aos="fade-up" data-aos-duration="1500">
+            <div class="steps">
+              <div class="icon">
+                <img src="images/howstep1.png" alt="image">
+              </div>
+              <div class="text">
+                <h3>Single Class</h3>
+                <p>Register for a free trial class</p>
+                <p>Enter your Email and register for a dance class. </p>
+                <p>Also for Alma Dance members.</p>
+                <!-- <form > -->
+                  <div class="form-group">
+                    <input type="email" name="email-class" class="form-control" placeholder="Enter your email">
+                    <div class="output" ></div>
+                  </div>
+                <!-- </form> -->
+                <button class="btn puprple_btn ml-0 bookaclass">BOOK A CLASS</button>
+                <!-- <button class="btn btn-dark bookaclass" style="display: none; margin: 5px 5px 5px 5px;">Book a class</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="steps_block step_border" data-aos="fade-up" data-aos-duration="1500">
+            <div class="steps">
+              <div class="icon">
+                <img src="images/howstep2.png" alt="image">
+              </div>
+              <div class="text">
+                <h3>Membership</h3>
+                <p>Start or update your membership</p>
+                <p>Select a Membership and start dancing.</p> 
+                <p>We have different plans for everyone. </p>
+                  <!-- <form > -->
+                    <div class="form-group">
+                      <input type="email" name="email-membership" class="form-control" placeholder="Enter your email">
+                      <div class="output-membership" ></div>
+                    </div>
+                  <!-- </form> -->
+                  <button class="btn puprple_btn ml-0  paypal">START A MEMBERSHIP</button>
+                <!-- <button class="btn btn-dark paypal" style="display: none; margin: 5px 5px 5px 5px;">Make a payment</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="steps_block" data-aos="fade-up" data-aos-duration="1500">
+            <div class="steps">
+              <div class="icon">
+                <img src="images/howstep3.png" alt="image">
+              </div>
+              <div class="text">
+                <h3>Dance</h3>
+                <p>Start dancing with us!</p>
+                <p>Enjoy our classes as a member & bring friends.</p>
+                <p>We always have offers for they and for you!</p>
+                <!-- <form > -->
+                  <div class="form-group">
+                    <input type="email" name="email-member" class="form-control" placeholder="Enter your email">
+                    <div class="output-member" ></div>
+                  </div>
+                <!-- </form> -->
+                <button class="btn puprple_btn ml-0  emailer">CHECK YOUR MEMBERSHIP</button>
+                <button class="btn btn-dark allpayments" style="display: none; margin: 5px 5px 5px 5px;">Show my payment history</button>    
+                <button class="btn btn-dark payment" style="display: none; margin: 5px 5px 5px 5px;">Show My Membership Card</button>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <br>
+        <br>
+           <span style="color: #48005f" ><h5 id="name_display" ></h5></span>
+            <span style="color: #48005f" ><h5 id="email_display" ></h5></span>
+            <div class="postcard__preview-txt" id="user_message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- AGENDA Section End -->  
+
+<section class="light">
+  <div id="form-tickets" class="container py-2">
+    <div class="col" style="font-weight: bold" >
+      <div class="col" style="font-weight: bold" >
+        <!-- <div class="output" ></div> -->
+      </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-1" id="sect1">
+  <div class="col" style="font-weight: bold" >
+
+    <div class="container-fluid" id="tableContainer">
+      <input type="hidden" id="User_email" value="">
+      <input type="hidden" id="User_name" value="">
+      <input type="hidden" id="User_courses" value="Not Registered yet">
+      <input type="hidden" id="User_id" value="Not Registered yet">
+      <input type="hidden" id="User_active" value="Not Registered yet">
+      <input type="hidden" id="User_lastpayment" value="Not Registered yet">
+      <input type="hidden" id="User_saldo" value="Not Registered yet">
+      <input type="hidden" id="User_anmerkungen" value="Not Registered yet">
+      <input type="hidden" id="User_nextpayment" value="Not Registered yet">
+    </div>
+  </br>
+
+<!-- ----MEMBERSHIP BLOCK ---- -->
+  <div id="stripe-container" style="display: none" >
+    <h1 style="text-align: center"><strong> Start/Update your Membership</strong></h1>
+     <div  class="row">
+      <div class="col-sm">
+         <div class="card">
+            <div class="card-body">
+               <h5 class="card-title">3 Months Subscription</h5>
+               <div class="price-container" id="1 Course/Kurs-3 Months Subscription">
+                  <p class="card-text p-card">1 Class per Week<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="2 Courses/Kurse-3 Months Subscription">
+                  <p class="card-text p-card">2 Classes per Week<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="3 Courses/Kurse-3 Months Subscription">
+                  <p class="card-text p-card">3 Classes per Week<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="Flatrate-3 Months Subscription">
+                  <p class="card-text p-card">All Classes<span style="font-weight:bold"></span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm">
+         <div class="card">
+            <div class="card-body">
+               <h5 class="card-title">6 Months Subscription</h5>
+               <div class="price-container" id="1 Course/Kurs-6 Months Subscription">
+                  <p class="card-text p-card">1 Class per Week<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="2 Courses/Kurse-6 Months Subscription">
+                  <p class="card-text p-card">2 Classes per Week<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="3 Courses/Kurse-6 Months Subscription">
+                  <p class="card-text p-card">3 Classes per Week<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="Flatrate-6 Months Subscription">
+                  <p class="card-text p-card">All Classes<span style="font-weight:bold"></span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+           <div class="card-body">
+              <h5 class="card-title">12 Months Subscription</h5>
+              <div class="price-container" id="1 Course/Kurs-12 Months Subscription">
+                 <p class="card-text p-card">1 Class per Week<span style="font-weight:bold"></span></p>
+              </div>
+              <div class="price-container" id="2 Courses/Kurse-12 Months Subscription">
+                 <p class="card-text p-card">2 Classes per Week<span style="font-weight:bold"></span></p>
+              </div>
+              <div class="price-container" id="3 Courses/Kurse-12 Months Subscription">
+                 <p class="card-text p-card">3 Classes per Week<span style="font-weight:bold"></span></p>
+              </div>
+              <div class="price-container" id="Flatrate-12 Months Subscription">
+                 <p class="card-text p-card">All Classes<span style="font-weight:bold"></span></p>
+              </div>
+           </div>
+        </div>
+     </div>
+      <div class="col-sm">
+         <div class="card">
+            <div class="card-body">
+               <h5 class="card-title">Promotions/Individual Classes</h5>
+               <div class="price-container" id="4er Karte">
+                  <p class="card-text p-card">4 Classes Membership Card<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="10er Karte">
+                  <p class="card-text p-card">10 Classes Membership Card<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="Beginners 1 Course - 3 Months">
+                  <p class="card-text p-card">1 Beginner Course 3 Months Subscription<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="Beginners 1 Course - 6 Months">
+                  <p class="card-text p-card">1 Beginner Course 6 Months Subscription<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="Beginners 1 Course - 3 Months Couple">
+                  <p class="card-text p-card">1 Couple Beginner Course 3 Months Subscription<span style="font-weight:bold"></span></p>
+               </div>
+               <div class="price-container" id="Beginners 1 Course - 6 Months Couple">
+                  <p class="card-text p-card">1 Couple Beginner Course 6 Months Subscription<span style="font-weight:bold"></span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+           <div class="card-body">
+              <h5 class="card-title">1 Month Subscription</h5>
+              <div class="price-container" id="1 Course/Kurs-1 Month Subscription">
+                 <p class="card-text">1 Class per Week<span style="font-weight:bold"></span></p>
+              </div>
+              <div class="price-container" id="2 Courses/Kurse-1 Month Subscription">
+                 <p class="card-text p-card">2 Classes per Week<span style="font-weight:bold"></span></p>
+              </div>
+              <div class="price-container" id="3 Courses/Kurse-1 Month Subscription">
+                 <p class="card-text p-card">3 Classes per Week<span style="font-weight:bold"></span></p>
+              </div>
+              <div class="price-container" id="Flatrate-1 Month Subscription">
+                 <p class="card-text p-card">All Classes<span style="font-weight:bold"></span></p>
+              </div>
+           </div>
+        </div>
+     </div>
+    </div>
+    </div>
+
+  <!--PAYMENT FORM  -->
+  <div id="payment-block">
+    <div id="pay-form-container"></div>
+  <!--PAYMENT MESSAGE  -->
+  <div id="messsage-container" class="container-fluid">
+    <div style="text-align: center;">
+    <div id="message-button-small-container"></div>
+  </div>
+  </div>
+  <!--PAYPAL BANK ZONE  -->
+    <div id="smart-button-container" class="container-fluid">
+      <div style="text-align: center;">
+        <div style="margin-bottom: 1.25rem;display: none" id="price_shield" >
+          <p>ALMA DANCE COURSES</p>
+          <select id="item-options">
+            <option value="Item" id="ItemOrdered">Select an Item - 0 EUR</option>
+            <!-- <option value="Marathon pass" price="72">Marathon pass - 72 EUR</option> -->
+          </select>
+          <select style="visibility: hidden" id="quantitySelect"></select>
+        </div>
+      <div id="paypal-button-container"></div>
+      </div>
+    </div>
+    <div id="bank-button-container"></div>
+  </div>    
+</div>
+</section>
+
+<section class="section-2" style="display: none"  >
+  <div class="col" style="font-weight: bold" >
+  <br/>
+<!-- Buttons  -->
+  <h1 style="text-align: center"><strong>Dance Scheduler / Trial Class Booking</strong></h1>
+  <!-- User Data -->
+  <div id="userdata" class="table data"></div>
+  <!-- Courses Data -->
+  <div id="rowdata"></div>
+</div>
+
+<!-- Modal Section-->
+<div id="statesModal"></div>
+<div id="payModal"></div>
+<div id="paymentsModal"></div>
+<div id="BankModal"></div>
+  <!-- Why We Uniqiue Section End -->
+</section>
+<section>
+  <br>
+</section>
+
+
+
+  <!-- Page Wraper -->
+  <div class="page_wrapper">
+      <!-- Positive Reviews Section Start -->
+  <section id="review_section" class="review_section row_am">
+    <div class="container">
+      <div class="positive_inner">
+        <div class="row">
+          <div class="col-md-6 sticky-top">
+            <div class="sidebar_text" >
+              <div class="section_title text-left">
+                <span class="title_badge">Reviews</span>
+                <h2><span>Positive reviews </span> <br>
+                  of our clients</h2>
+              </div>
+              <div class="google_rating">
+                <div class="star">
+                  <span><i class="icofont-star"></i></span>
+                  <span><i class="icofont-star"></i></span>
+                  <span><i class="icofont-star"></i></span>
+                  <span><i class="icofont-star"></i></span>
+                  <span><i class="icofont-star"></i></span>
+                </div>
+                <p>4.5/5.0 Rated on <img class="img-fluid" src="images/google.png" alt="image"></p>
+              </div>
+              <div class="user_review">
+                <!-- <p>1399 <a href="#">Total user reviews <i class="icofont-arrow-right"></i></a></p> -->
+              </div>
+              <div class="smiley_icon"><img src="images/smily.png" alt="image"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="review_side">
+              <div class="review_block" data-aos="fade-up" data-aos-duration="1500">
+                <div class="coustomer_info">
+                  <div class="avtar">
+                    <img src="images/Lari.webp" alt="image">
+                    <div class="text">
+                      <h3>Larissa</h3>
+                      <span>Bachata Dancing</span>
+                    </div>
+                  </div>
+                  <div class="star">
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                  </div>
+                </div>
+                <p>“Edu and Nat are the best teachers! They are fun, dynamic, and always provide a good experience. They take time for you individually as well and make sure everyone understands and feels comfortable. You can also see how passionate they are about dance and that excitement shows in the classes. In addition, they also organize the best parties 🎉 I highly recommend their dancing school.”
+                </p>
+              </div>
+              <div class="review_block" data-aos="fade-up" data-aos-duration="1500">
+                <div class="coustomer_info">
+                  <div class="avtar">
+                    <img src="images/Marina.webp" alt="image">
+                    <div class="text">
+                      <h3>Marina</h3>
+                      <span>Bachata Dancing</span>
+                    </div>
+                  </div>
+                  <div class="star">
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                  </div>
+                </div>
+                <p>“You will not only meet good-hearted people with these two, but you can also feel comfortable in the course, whether you have never danced before or already have previous knowledge. Look forward to getting to know a great dance community and register!”</p>
+              </div>
+              <div class="review_block" data-aos="fade-up" data-aos-duration="1500">
+                <div class="coustomer_info">
+                  <div class="avtar">
+                    <img src="images/Vika.webp" alt="image">
+                    <div class="text">
+                      <h3>Viktoria</h3>
+                      <span>Salsa Dancing</span>
+                    </div>
+                  </div>
+                  <div class="star">
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                    <span><i class="icofont-star"></i></span>
+                  </div>
+                </div>
+                <p>“Having recently come from Ukraine, dancing has become a remedy for me. Edu is a professional teacher, but he can easily explain in several languages if something is not clear, at any level of difficulty. Natalya focuses on the female style. They are both excellent teachers and professionals in their field. I love their classes, join us!”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Positive Reviews Section End -->
+
+
+    <!-- Footer-Section start -->
+    <footer class="white_text" data-aos="fade-in" data-aos-duration="1500">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="logo_side">
+              <!-- <div class="logo">
+                <a href="#">
+                  <img src="images/ft_logo.webp" alt="Logo">
+                </a>
+              </div> -->
+              <div class="news_letter">
+                <h3>Subscribe newsletter</h3>
+                <p>Be the first to recieve all latest post in your inbox</p>
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn"><i class="icofont-paper-plane"></i></button>
+                  </div>
+                  <p class="note">By clicking send link you agree to receive news and promotions from us.</p>
+                </form>
+              </div>
+              <ul class="contact_info">
+                <li><a href="mailto:">info@alma-dance.de</a></li>
+                <li><a href="https://wa.me/message/AQECYWAZB43BJ1">+49 1639641730</a></li>
+              </ul>
+              <ul class="social_media">
+                <li><a href="https://www.facebook.com/AlmaDanceFrankfurt"><i class="icofont-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/eduardo_natalia_almadance/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@almadancebachatasalsa9317"><i class="icofont-youtube"></i></a></li>
+                <li><a href="https://wa.me/message/AQECYWAZB43BJ1"><i class="icofont-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="download_side">
+              <h3>The Dance Experience</h3>
+              <ul class="app_btn">
+                <!-- <li>
+                  <a class="navbar-brand" href="home.html">
+                    <img src="images/logo.webp" alt="Logo">
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="ft_inner">
+            <div class="copy_text">
+              <p>©Alma Dance Frankfurt by Eduardo Millan</p>
+            </div>
+            <ul class="links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="danceschool-frankfurt.html">About us</a></li>
+              <li><a href="Pricing.html">Prices</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <div class="design_by">
+              <!-- <p>Crafted by <a href="https://alma-dance.de" target="blank">Eduardo Millan</a></p> -->
+              <p><a href="https://alma-dance.de/privacy-policy" target="blank">Privacy Policy</a></p>
+              <p><a href="https://alma-dance.de/impressum" target="blank">Impressum</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer-Section end -->
+
+    <!-- go top button -->
+    <div class="go_top" id="Gotop">
+      <span><i class="icofont-arrow-up"></i></span>
+    </div>
+
+    <!-- Video Model Start -->
+    <div class="modal fade youtube-video" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button id="close-video" type="button" class="button btn btn-default text-right" data-dismiss="modal">
+            <i class="icofont-close-line-circled"></i>
+          </button>
+          <div class="modal-body">
+            <div id="video-container" class="video-container">
+              <iframe id="youtubevideo" width="640" height="360" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video Model End -->
+  </div>
+  <!-- Page-wrapper-End -->
+
+  <!-- Jquery-js-Link -->
+  <script src="js/jquery.js"></script>
+  <!-- owl-js-Link -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- bootstrap-js-Link -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- aos-js-Link -->
+  <script src="js/aos.js"></script>
+  <!-- Typed Js Cdn -->
+  <script src='js/typed.min.js'></script>
+  <!-- main-js-Link -->
+  <script src="js/main.js"></script>
+
+  <!--SKRIPT ZONE  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="app_admin.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- PROD PAYPAL <script src="https://www.paypal.com/sdk/js?client-id=Ad_vdC1plSPko5d9oY4CJeobC3WYQqtoyOthXJ0IcKfo38y-Ya9wcgRTglhuWrNSRyub31mxXLhUuAFM&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script> -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Ad_vdC1plSPko5d9oY4CJeobC3WYQqtoyOthXJ0IcKfo38y-Ya9wcgRTglhuWrNSRyub31mxXLhUuAFM&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+ 
+  <!-- <script src="https://www.paypal.com/sdk/js?client-id=AclB-BsMF4ANpqyctt2euY8KJeBkjLLKZblEKOinRpLMY4ku2ecNq45KvJ7CdMKMg-z3BJQKndjc0553&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>  -->
+
+
+
+
+  <script>
+    $("#typed").typed({
+      strings: ["Type Writing Text", "Auto Type Text", "Add any text you like here."],
+      typeSpeed: 100,
+      startDelay: 0,
+      backSpeed: 60,
+      backDelay: 2000,
+      loop: true,
+      cursorChar: "|",
+      contentType: 'html'
+    });
+
+    // Fixed Discount Dish JS
+    $(document).ready(function () {
+      let cardBlock = document.querySelectorAll('.task_block');
+      let topStyle = 120;
+
+      cardBlock.forEach((card) => {
+        card.style.top = `${topStyle}px`;
+        topStyle += 30;
+      })
+
+    }
+    );
+
+    // Scroll Down Window 
+    $(document).ready(function () {
+      // Attach a click event handler to the button
+      $('#scrollButton').click(function () {
+        // Scroll down smoothly 200 pixels from the current position
+$('html, body').animate({ scrollTop: $(window).scrollTop() + 600 }, 800); // Adjust the speed (800ms) as needed
+      });
+    });
+
+  </script>
+<link rel="stylesheet" href="css/icofont.min.css">
+<link rel="stylesheet" href="cookie-banner.css">
+<div id="consent_data"></div>
+<script src="consent3.js"></script>
+</body>
+
+</html>
