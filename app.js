@@ -28,7 +28,7 @@ function getInit() {
 
 // call API COURSES
 
-const url = 'https://script.google.com/macros/s/AKfycbwv-Gfb1WEq7zWSV9xi4B3VB1ZpBft6z1IHRsLE58i8qTp5i50GfrE5IIbxZqKJK62I/exec';
+const url = 'https://script.google.com/macros/s/AKfycbwkx_YygwDyJRhkc_Rnl_s3a1LAUz7q7f-GNT-HjCipwudJEwrARw38-_kOJ9gQSSpw/exec';
 
 //'https://script.google.com/macros/s/AKfycby11BJT6bxuoo5nc65Gk1aMyHV4dMdrm8MYayi9lbKCZKVuqf89LxHfbz6NZ8km6zX6/exec';
 
@@ -704,7 +704,7 @@ function showPayment(payment)
       {
       console.log(arr);
       sData(arr);
-      document.getElementById("display_success").innerHTML = "Thank you "+firstname+" "+lastname+" (email: "+email+").You just received just an Email from info@alma-dance.com with the course details. Please check also in your spam folder";
+      document.getElementById("display_success").innerHTML = "Thank you "+firstname+" "+lastname+" (email: "+email+").You just received just an Email from info@alma-dance.com with the course details. Please check also in your spam folder & if TRIAL CLASS read the instructions please!!";
       document.getElementById("display_error").innerHTML = "";
       document.getElementById("addRegis").disabled = true; 
       }
@@ -712,7 +712,7 @@ function showPayment(payment)
       {
       console.log(arr);
       sData(arr);
-      document.getElementById("display_success").innerHTML = "Thank you "+firstname+" "+lastname+" (email: "+email+").You just received just an Email from info@alma-dance.com with the course details. Please check also in your spam folder";
+      document.getElementById("display_success").innerHTML = "Thank you "+firstname+" "+lastname+" (email: "+email+").You just received just an Email from info@alma-dance.com with the course details. Please check also in your spam folder & if TRIAL CLASS read the instructions please!!";
       document.getElementById("display_error").innerHTML = "";
       document.getElementById("addRegis").disabled = true; 
       }
